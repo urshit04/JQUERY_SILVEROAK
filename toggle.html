@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div1").fadeToggle(1000);
+                $("#div2").fadeToggle(2000);
+                $("#div3").fadeToggle(3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Demonstrate fadeToggle() with different speed parameters.</p>
+    <button>Click</button><br><br>
+
+    <div id="div1" style="width:80px;height:80px;background-color:aqua;"></div>
+    <br>
+    <div id="div2" style="width:80px;height:80px;background-color:greenyellow;"></div>
+    <br>
+    <div id="div3" style="width:80px;height:80px;background-color:orangered;"></div>
+
+</body>
+
+</html>
